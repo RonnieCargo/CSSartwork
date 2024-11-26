@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      <header>
+<h1 id="title"> freeCodeCamp Survey Form</h1>
+<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+</header>
+
+<form id="survey-form" for="survey-form">
+  <div>
+  <input id="survey-form" type="radio" name="prefix" value="Mr."/>
+  <label for="Mr.">Mr.</label>
+</div>
+<div>
+ <input id="survey-form" type="radio" name="prefix" value="Mrs."/>
+  <label for="Mrs.">Mrs.</label>
+</div>
+<div>
+ <input id="survey-form" type="radio" name="prefix" value="Miss"/>
+  <label for="Miss">Miss</label>
+</div>
+  <div>
+<label for="name" id="name-label">Name</label>
+</div>
+  <input required name="name" id="name" type="text" placeholder="Enter your name"/>
+
+<div>
+ <label for="email" id="email-label">Email</label>
+  </div>
+  <input required name="name" id="email" type="email" placeholder="Enter your Email"/>
+
+<div>
+<label for="number" id="number-label">Age (optional)</label>
+</div>
+  <input type="number" id="number" placeholder="Age" min="13" max="100"/>
+
+<div>
+<p>Which option best describes your current role?</p>
+  <select id="dropdown" name="role" required>
+    <option>Select current role</option>
+    <option>Part-time work</option>
+    <option>Full-time work</option>
+    <option>Seasonal Work</option>
+    </select>
+</div>
+<div>
+<input type="checkbox" name="checkbox" value="no"/>
+<label for="checkbox">yes</label>
+
+<input type="checkbox" name="checkbox" value="no"/>
+<label for="checkbox">no</label>
+</div>
+<div>
+<textarea placeholder="addtional comments"></textarea>
+</div>
+<button id="submit">
+  <input type="submit"/>
+</form>
+

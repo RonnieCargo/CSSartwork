@@ -1,0 +1,62 @@
+body {
+    background-color: purple;
+    margin: 10px auto 10px;
+    padding: 0;
+}
+
+#img-div {
+    background-color: aqua;
+    padding: 10px 2px;
+    margin: 0 25px;
+    border-radius: 5px;
+}
+
+#header {
+    text-align: center;
+    font-size: 6vh;
+}
+#subheader {
+    justify-self: center;
+}
+
+#image {
+    display: block;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+#img-caption {
+    text-align: center;
+    font-size: small;
+}
+
+#tribute-info {
+    display: flex;
+    justify-content: center; 
+    font-size: x-large;
+    
+}
+.bold {
+    font-weight: 900;
+}
+
+.timeline {
+    padding-left: 25%
+}
+
+ul > li {
+    margin: 15px;
+}
+
+#quote {
+    font-style: italic;
+    text-align: left; 
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+.footer {
+    font-weight: bolder;
+
+}
