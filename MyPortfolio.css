@@ -130,11 +130,3 @@ p, ul > li > a, h1, aside, nav > a {
     font-family: cursive;
 }
 
-@media only screen and (max-width: 720px) {
-}
-
-@media only screen and (max-width: 600px) {
-}
-
-@media only screen and (max-width: 550px) {
-  }
