@@ -129,3 +129,20 @@ section {
 p, ul > li > a, h1, aside, nav > a {
     font-family: cursive;
 }
+
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-with-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hero-title {
+    font-size: 6rem;
+  }
