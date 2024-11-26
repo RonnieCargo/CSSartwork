@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        background-color: hsl(315, 29%, 63%);
+        font-family: sans-serif;
+    }
+    .wrapper {
+        display: grid; 
+        grid-template-columns: 150px 1fr 150px; 
+        grid-template-rows: 75px 1fr 50px; 
+        grid-template-areas: 
+        "Header Header Header"
+        "sidenav main sidebar"
+        "footer footer footer"; 
+        gap: 1px; 
+        min-height: 100vh;
+    }
+    
+    .wrapper > * {
+        padding: 1rem;
+        background-color: hsl(315, 29%, 63%);
+    }
+    
+
+    Header { 
+    grid-area: Header; 
+    display: flex;
+    align-items: center;}
+    
+    
+    aside.sidenav { grid-area: sidenav; }
+    main.content { grid-area: main; }
+    aside.sidebar { grid-area: sidebar; }
+    footer { grid-area: footer; }
+        
+    /* header, footer { */
+    /* grid-column: span 3;} */
+    h1 {
+        margin: 0;
+    }
+    nav {
+        margin-left: auto;
+        /* flex-grow: 1; 
+        /* text-align: right; */
+    }
+    
+    section, section:target ~ section:last-of-tupe {
+        display: none;
+    }
+    section:target, section:ast-of-type {
+        display: inherit;
+    }
+
+    .imgwrapper {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 40% 40% 40%; 
+        grid-template-areas: 
+        ".carddetailed1 .carddetailed3 .carddetailed2"
+        ".carddetailed1 .carddetailed3 .carddetailed2"
+        ".carddetailed1 .carddetailed3 .carddetailed2"; 
+        gap: 25px; 
+        min-height: 50vh;
+    }
+    
+    .card {
+        border: 1px solid hsl(298, 63%, 29%);
+        border-radius: 8px;
+        padding: 150px;
+        /* width: 300px; */
+        margin: 10px;
+      }
+      .detailed h3 {
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      
+      .detailed a {
+        padding: 10px;
+        background-color: hsl(211, 72%, 66%);
+        color: white;
+        border: 100;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+
+
+      /* Container for the collage */
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between items */
+    padding: 15px;
+}
+
+/* Style for individual items */
+.collage-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.collage-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the space */
+    transition: transform 0.3s ease;
+}
+
+.collage-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.resourcewrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.tr-link > img {
+    height: 3rem;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+p, ul > li > a, h1, aside, nav > a {
+    font-family: cursive;
+}
